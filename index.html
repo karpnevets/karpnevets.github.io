@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KBA점수판</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <img src="KISB.png" alt="school_logo" class="logo" />
+        <button class="reset" onclick="clearBoard()">Clear</button>
+        <div class="maker">maker: PSR NHC</div>
+      </div>
+      <!-- header -->
+      <div class="main">
+        <div class="left">
+          <input
+            class="team"
+            id="leftname"
+            onfocus="stopListener()"
+            onblur="resumeListener()"
+          />
+          <div class="score" id="lscore">0</div>
+        </div>
+        <button class="switch" onclick="switchPosition()">
+          <img src="reverse 2.png" alt="교체" class="reverse" />
+        </button>
+        <div class="clock">
+          <div class="time" id="timeShow">00:00</div>
+        </div>
+        <input
+          class="application"
+          id="timeInput"
+          type="number"
+          placeholder="시간(초) 입력"
+          onkeyup="setTime(event)"
+          onfocus="stopListener()"
+          onblur="resumeListener()"
+        />
+        <div class="right">
+          <input
+            class="team"
+            id="rightname"
+            onfocus="stopListener()"
+            onblur="resumeListener()"
+          />
+          <div class="score" id="rscore">0</div>
+        </div>
+      </div>
+      <!-- main -->
+    </div>
+    <!-- wrap -->
+    <script src="index.js"></script>
+    <!--link JavaScript File-->
+  </body>
+</html>
