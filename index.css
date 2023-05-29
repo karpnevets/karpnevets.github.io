@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  height: 100vh;
+}
+
+.header {
+  height: 15vh;
+  background-color: #f6ea8c;
+  padding: 3vh;
+}
+
+.logo {
+  position: absolute;
+  left:5vw;
+}
+
+.maker {
+  position: absolute;
+  right: 5vw;
+  margin-top: 7vh;
+  font-size: small;
+  color:#f26d5b;
+}
+
+img {
+  height: 9vh;
+  object-fit: cover;
+}
+
+.main {
+  height: 85vh;
+  padding: 5vh 3vw;
+}
+
+.left,
+.right {
+  background-color: #f6ea8c;
+  width: 32vw;
+  height: 75vh;
+  display: inline-block;
+  border: 3px solid #f6ea8c;
+  border-radius: 5vh;
+  padding: 5vh 3.5vw;
+}
+
+.switch {
+  background-color: #f6ea8c;
+  width: 23vw;
+  height: 20vh;
+  display: inline-block;
+  border: 1px solid #f6ea8c;
+  vertical-align: top;
+  border-radius: 5vh;
+  text-align: center;
+  line-height: 20vh;
+  font-weight: bold;
+  font-size: 8vh;
+  color: #f26d5b;
+}
+
+.clock {
+  background-color: #f6ea8c;
+  width: 23vw;
+  height: 25vh;
+  display: inline-block;
+  border: 5px solid #f6ea8c;
+  border-radius: 5vh;
+  position: absolute;
+  margin-top: 5vh;
+  top: 40vh;
+  left: 38vw;
+}
+
+.right,
+.switch {
+  margin-left: 3vw;
+}
+
+.application {
+  background-color: #f6ea8c;
+  width: 23vw;
+  height: 20vh;
+  position: absolute;
+  top: 70vh;
+  left: 38vw;
+  margin-top: 5vh;
+  border-radius: 5vh;
+  text-align: center;
+  line-height: 20vh;
+  font-weight: bold;
+  font-size: 8vh;
+  color:#f26d5b;
+}
+
+.team {
+  width: 25vw;
+  height: 10vh;
+  border: 3px solid #f26d5b;
+  background-color: #f26d5b;
+  border-radius: 1vh;
+  text-align: center;
+  line-height: 10vh;
+  font-weight: bold;
+  font-size: 8vh;
+  color: #f6ea8c;
+}
+
+.score {
+  margin-top: 5vh;
+  width: 25vw;
+  height: 50vh;
+  border: 10px solid #f26d5b;
+  border-radius: 1vh;
+  text-align: center;
+  line-height: 50vh;
+  font-weight: bold;
+  font-size: 30vh;
+  color: #f26d5b;
+}
+
+.time {
+  text-align: center;
+  line-height: 24vh;
+  font-weight: bold;
+  font-size: 9vw;
+  color: #f26d5b;
+}
+
+.reset {
+  width: 23vw;
+  height: 9vh;
+  position: absolute;
+  top: 3vh;
+  left: 38vw;
+  background-color: #f6ea8c;
+  text-align: center;
+  font-size: 5vh;
+  border-width: 1px;
+  border-radius: 5px;
+  color:#f26d5b;
+}
+
+* {
+  font-family: fantasy;
+}
