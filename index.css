@@ -144,6 +144,11 @@
   border-radius: 5px;
 }
 
+.manual {
+  margin-top: 5vh;
+  height: 18vh;
+}
+
 * {
   font-family: fantasy;
 }
