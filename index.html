@@ -1,0 +1,138 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KBA점수판</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="shortcut  icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <img src="KISB.png" alt="school_logo" class="school_logo" />
+        <img src="KBA.png" alt="kba_logo" class="kba_logo" />
+      </div>
+      <!-- header -->
+      <div class="clock">
+        <div class="time" id="timeShow">00:00</div>
+      </div>
+      <!-- clock -->
+      <div class="main">
+        <div class="left">
+          <input
+            class="team"
+            id="leftname"
+            placeholder="팀명 입력"
+            onfocus="stopListener()"
+            onblur="resumeListener()"
+          />
+          <div class="score" id="lscore">0</div>
+        </div>
+        <!-- left -->
+        <div class="right">
+          <input
+            class="team"
+            id="rightname"
+            placeholder="팀명 입력"
+            onfocus="stopListener()"
+            onblur="resumeListener()"
+          />
+          <div class="score" id="rscore">0</div>
+        </div>
+        <!-- right -->
+      </div>
+      <!-- main -->
+      <div class="footer">
+        <div class="lfooter">
+          <p class="Maker">Maker :PSR NHC</p>
+        </div>
+        <div class="rfooter">
+          <button class="reset" onclick="clearBoard()">
+            <img src="./reset.png" alt="reset_btn" class="resetime" />
+            <p>Reset</p>
+          </button>
+          <button class="switch" onclick="switchPosition()">
+            <img src="swap.svg" alt="교체" class="reverse" />
+            <p class="switchp">Switch</p>
+          </button>
+          <div id="btnWrap1">
+            <button id="popupBtn1">
+              <img src="user guide.png" alt="user_guide" class="user_guide" />
+            </button>
+          </div>
+          <div id="modalWrap1">
+            <div id="modalBody1">
+              <span id="closeBtn1">&times;</span>
+              <p>User Guide</p>
+              <p>
+                <br />
+                1. 기본 설정 방법 <br />팀 이름 설정은, 팀 이름 입력란을 클릭해
+                작성 가능합니다. <br /><br />2. 점수 조작 방법 <br />점수는
+                단축키를 통해 조작 할 수 있습니다. 왼쪽 팀의 점수는 "Q", "A",
+                오른쪽 팀의 점수는 "Y","H"를 통해 각각 1점 식 추가하고 뺄 수
+                있습니다. <br /><br />3. 타이머 조작 방법<br />
+                타이머 시간 설정은 우측 하단의 "Time Setting"을 통해 초 단위로
+                입력하면 됩니다. 타이머를 시작할 때는 "S",일시정지 할 때는 "P"를
+                사용 할 수 있습니다.<br /><br />4. 추가 기능 <br />하단의
+                "Reset" 버튼을 통해서는 양 팀의 점수, 이름, 시간을 초기화 할 수
+                있고, "Switch" 버튼을 통해 양 팀의 점수와 팀명의 위치를 바꿀 수
+                있습니다.
+              </p>
+              <img src="./Manual.png" alt="Manual" class="manual_img" />
+            </div>
+          </div>
+          <!-- ############################ -->
+          <div id="btnWrap2">
+            <button id="popupBtn2">
+              <img src="setting.png" alt="setting" class="setting" />
+            </button>
+          </div>
+          <div id="modalWrap2">
+            <div id="modalBody2">
+              <span id="closeBtn2">&times;</span>
+              <p>시간 입력 창입니다. 초를 입력해주세요.</p>
+              <input
+                class="timeInput"
+                id="timeInput"
+                type="number"
+                placeholder="시간(초) 입력"
+                onkeyup="setTime(event)"
+                onfocus="stopListener()"
+                onblur="resumeListener()"
+              />
+              <p>시간 입력 후 엔터를 치고 창을 닫아주세요</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- wrap -->
+
+    <script>
+      const btn = document.getElementById("popupBtn1");
+      const modal = document.getElementById("modalWrap1");
+      const closeBtn = document.getElementById("closeBtn1");
+
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+      closeBtn1.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      const btn2 = document.getElementById("popupBtn2");
+      const modal2 = document.getElementById("modalWrap2");
+      const closeBtn2 = document.getElementById("closeBtn2");
+
+      btn2.onclick = function () {
+        modal2.style.display = "block";
+      };
+      closeBtn2.onclick = function () {
+        modal2.style.display = "none";
+      };
+    </script>
+    <script src="index.js"></script>
+    <!--link JavaScript File-->
+  </body>
+</html>

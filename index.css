@@ -1,0 +1,262 @@
+@font-face {
+  font-family: "neon";
+  src: url("./Michroma-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: neon, fantasy;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1C3B92;
+}
+
+.wrap {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  height: 13vh;
+  width: 100vw;
+  background-color: #1C3B92;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.school_logo {
+  height: 9vh;
+}
+.kba_logo {
+  height: 9vh;
+}
+.clock {
+  position: absolute;
+  top: 10vh;
+  width: 40vw;
+  border-top: 12vh solid #212F54;
+  border-left: 6vh solid transparent;
+  border-right: 6vh solid transparent;
+  display: flex;
+  justify-content: center;
+}
+.time {
+  text-align: center;
+  font-size: 10vh;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+.main {
+  height: 80vh;
+  width: 90vw;
+  background-color: #85A1D4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7vh;
+}
+
+.left,
+.right {
+  width: 25vw;
+  margin: 8vw;
+}
+
+.team {
+  width: 25vw;
+  height: 10vh;
+  background-color: #174C97;
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 4vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  margin-top: 5vh;
+  width: 25vw;
+  height: 40vh;
+  background-color: #174C97;
+  font-weight: bold;
+  font-size: 20vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100vw;
+  position: absolute;
+  padding: 1vh;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.lfooter {
+  width: 40vw;
+  padding-left: 5vw;
+}
+.rfooter {
+  width: 50vw;
+  right: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5vw;
+}
+.reset {
+  display: inline-block;
+  height: 5vh;
+}
+
+.resetime {
+  height: 5vh;
+}
+
+.reverse {
+  height: 4vh;
+  display: inline-block;
+}
+.switch {
+  height: 5vh;
+  margin-right: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.switchp {
+  margin-left: 1vw;
+  font-weight: light;
+}
+#btnWrap1 {
+  height: 5vh;
+  display: inline-block;
+}
+
+#popupBtn1 {
+  height: 5vh;
+}
+.user_guide {
+  height: 5vh;
+}
+
+#modalWrap1 {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10vh; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  display: none;
+}
+
+#modalBody1 {
+  width: 40vw;
+  height: 100vh;
+  padding: 5vh 5vh;
+  margin: 0 auto;
+  border: 1vh solid #777;
+  background-color: #fff;
+}
+
+#closeBtn1 {
+  float: right;
+  font-weight: bold;
+  color: #777;
+  font-size: 5vh;
+  cursor: pointer;
+}
+
+.setting {
+  height: 5vh;
+  display: inline-block;
+}
+
+#btnWrap2 {
+  height: 5vh;
+  display: inline-block;
+}
+
+#popupBtn2 {
+  height: 5vh;
+}
+
+#modalWrap2 {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10vh; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  display: none;
+}
+
+#modalBody2 {
+  width: 40vw;
+  height: 40vh;
+  padding: 5vh 5vh;
+  margin: 0 auto;
+  border: 1vh solid #777;
+  background-color: #fff;
+}
+
+#closeBtn2 {
+  float: right;
+  font-weight: bold;
+  color: #777;
+  font-size: 5vh;
+  cursor: pointer;
+}
+
+.timeinput {
+  margin-top: 5vh;
+  height: 10vh;
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+button {
+  background-color: rgb(51, 63, 80);
+  all: unset;
+}
+
+.reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-right: 3vw;
+}
+
+.maker {
+  color: gray;
+}
+
+.manual_img {
+  height: 30vh;
+}
